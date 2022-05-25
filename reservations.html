@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- This website template was created by: Salomon Mbouombouo
+File Name: about.html
+Today's Date: April 30, 2022-->
+<html lang="en">
+<head>
+	<title>Yammo Reservations</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+		<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+<body>
+
+	<div id="container">
+
+		<!-- Use the header area for the website name or logo -->
+		<header>
+	           <a href="index.html"><img src="images/mycar-logo.png" alt="Yammo logo"></a>
+		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website -->
+		<nav>
+			<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="reservations.html">Reservations</a></li>
+								<li><a href="fleet.html">Fleet</a></li>
+								<li><a href="locations.html">Locations</a></li>
+						</ul>
+		</nav>
+	</div>
+		<!-- Use the main area to add the main content of the webpage -->
+
+		<main>
+
+		<div id="form">
+			<h2>Be the first to know when our coming soon locations will be available and choose your next ride. Complete the form below.</h2>
+			<form class="form-grid"><!--Start Form-->
+				<fieldset>
+					<legend>Customer Information</legend>
+					<label for="fName">First Name:</label>
+					<input type="text" id="fName" name="fName" required />
+					<label for="lName">Last Name:</label>
+					<input type="text" id="lName" name="lName" required />
+
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required />
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required />
+					<label for="zipcode">Zip Code:</label>
+					<input type="text" id="zipcode" name="zipcode"/>
+				</fieldset>
+
+				<!--Form to collect data-->
+				<fieldset>
+					<legend>Select your pick up location.</legend>
+					<p>Anacortes and Mount Vernon are not available yet.</p>
+					<p>We will deliver to you if you select one of them</p>
+
+					<label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Group Fitness">Mount Vernon</label>
+					<label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Personal Training">Burlington</label>
+					<label for="nutr"><input type="checkbox" name="interest" id="nutr" value="Nutrition">Anacortes</label>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Select Date and Time</legend>
+					<label for="reference">Select Pick Up Date</label>
+					<select name="reference" id="reference">
+						<option value="ad">1</option>
+						<option value="friend">2</option>
+						<option value="google">3</option>
+						<option value="social">4</option>
+						<option value="other">5</option>
+						<option value="ad">6</option>
+						<option value="friend">7</option>
+						<option value="google">8</option>
+						<option value="social">9</option>
+						<option value="other">10</option>
+						<option value="ad">11</option>
+						<option value="friend">12</option>
+						<option value="google">13</option>
+						<option value="social">14</option>
+						<option value="other">15</option>
+						<option value="ad">16</option>
+						<option value="friend">17</option>
+						<option value="google">18</option>
+						<option value="social">19</option>
+						<option value="other">20</option>
+						<option value="ad">21</option>
+						<option value="friend">22</option>
+						<option value="google">23</option>
+						<option value="social">24</option>
+						<option value="other">25</option>
+						<option value="ad">26</option>
+						<option value="friend">27</option>
+						<option value="google">28</option>
+						<option value="social">29</option>
+						<option value="other">30</option>
+						<option value="other">31</option>
+				</select>
+				<label for="reference1">Select Month</label>
+				<select name="reference1" id="reference1">
+					<option value="ad">January</option>
+					<option value="friend">February</option>
+					<option value="google">March</option>
+					<option value="social">April</option>
+					<option value="other">May</option>
+					<option value="ad">June</option>
+					<option value="friend">July</option>
+					<option value="google">August</option>
+					<option value="social">September</option>
+					<option value="other">October</option>
+					<option value="ad">November</option>
+					<option value="friend">December</option>
+			</select>
+			<label for="reference2">Select Time</label>
+			<select name="reference2" id="reference2">
+				<option value="ad">12</option>
+				<option value="friend">1</option>
+				<option value="google">2</option>
+				<option value="social">3</option>
+				<option value="other">4</option>
+				<option value="ad">5</option>
+				<option value="friend">6</option>
+				<option value="google">7</option>
+				<option value="social">8</option>
+				<option value="other">9</option>
+				<option value="ad">10</option>
+				<option value="friend">11</option>
+		</select>
+		<label for="reference3">Morning/Afternoon</label>
+		<select name="reference3" id="reference3">
+			<option value="ad">AM</option>
+			<option value="friend">PM</option>
+	  </select>
+
+				<label for="questions">Enter Return Date and Time</label>
+				<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+
+				</fieldset>
+
+				<input type="submit" id="submit" value="Submit" class="btn" />
+
+			</form>
+
+		</div>
+
+		</main>
+
+		<!-- Use the footer area to add webpage footer content -->
+		<footer>
+			<p>&copy; Copyright 2021. All Rights Reserved.</p>
+			<p><a href="mailto:ccsalomon@yammo.com">ccsalomon@yammo.com</a></p>
+		</footer>
+
+</body>
+</html>
