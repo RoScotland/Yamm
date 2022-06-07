@@ -31,7 +31,7 @@ img {
 /* Style rule for header Updates: webkit-sticky removed */
 header {
     top: 0;
-    background-color: #ffffff;
+    background-color: #E4F9F5;
     color: #006100;
     text-align: center;
     height: 250px;
@@ -92,25 +92,6 @@ main {
     text-shadow: 5px 5px 8px #ccc;
 
 }
-article{
-    padding: 2%;
-}
-
-article h3 {
-    text-align: center;
-}
-
-article img{
-    margin: 0 auto;
-}
-
-article ul {
-    margin-left: 10%;
-}
-
-article:nth-of-type(2){
-  background-color: rgba(204, 204, 204, 0.3);
-}
 .tel-link {
     background-color: #404040;
     padding: 2%;
@@ -157,9 +138,6 @@ article:nth-of-type(2){
     font-weight: bold;
 }
 
-#weights, #cardio, #training {
-    margin: 0 2%;
-}
 
 .round {
     border-radius: 8px;
@@ -170,7 +148,6 @@ article:nth-of-type(2){
     font-weight: bold;
     text-decoration: none;
 }
-
 #contact {
     text-align: center;
 }
@@ -188,21 +165,52 @@ article:nth-of-type(2){
 }
 
 
-#form {
-    margin-top: 2%;
+.map {
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+}
+
+#container{
+  background-color: #E4f9F5;
+
+}
+
+
+#form form-grid2 {
+    margin: 2%;
     background-color: #f2f2f2;
     padding: 2%;
-    position:absolute;
+    align-items: center;
 }
 
 #form h2 {
     text-align: center;
 }
+
+#form {
+    margin: 2%;
+    background-color: #f2f2f2;
+    padding: 2%;
+    align-items: center;
+}
+
+#form h2 {
+    text-align: center;
+
+  }
+
 #hero h1 {
     text-align: center;
     font-weight:bold;
     font-family: 'Francois One', sans-serif;
     color: #006100;
+    border-bottom: 10px;
+}
+
+article h3{
+  text-align: center;
+  color: #006100;
 }
 
 /*Style rules for form elements*/
@@ -217,19 +225,20 @@ fieldset legend {
 label {
     display: block;
     padding-top: 3%;
-
 }
 
-form #reserve {
+
+form1 #reserve {
   margin: 0 auto;
-  text-align: center;
-  border: none;
   display: block;
-  padding: 2%;
+  text-align: center;
+  Padding: 2%;
   background-color: #006100;
-  font-size: 2em;
   border-radius: 10px;
+  font-size: 1.35em;
 }
+
+
 form #submit {
   margin: 0 auto;
   text-align: center;
@@ -380,6 +389,12 @@ form {
     width: 70%;
     margin: 0 auto;
 }
+
+form1 {
+    width: 70%;
+    margin: 0 auto;
+}
+
 }
 
 
@@ -435,7 +450,6 @@ form {
       padding: 20px;
   }
 
-  }
 
   .frame {
       opacity: 0.9;
@@ -461,7 +475,7 @@ form {
 form {
   width: auto;
 }
-.form-grid {
+.form-grid2 {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
@@ -470,6 +484,19 @@ form {
 .btn {
     grid-column: 1/span 3;
 }
+
+.form-grid1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+
+.btn {
+    grid-column: 1/span 3;
+}
+
+}
+
 
 /*Media Query for Large Desktop Viewports*/
 @media screen and (min-width: 1921px){
